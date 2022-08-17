@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    
+      <meta charset = "utf-8">
+      <title>Spinner JQuery UI</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+      
+      
+      <style type = "text/css">
+        #MyValueList input 
+         {
+             width: 100px;
+             color:Navy;
+             font-weight:bold;
+         }
+         .fa-skull-crossbones{
+  
+         font-size: 2em;
+         color: #000000;
+         text-shadow: 0 0 5px rgb(17, 254, 0), 0 0 5px rgb(3, 84, 18), 0 0 5px rgb(12, 107, 3);
+         animation:  animatete 7s linear infinite;
+        
+        }
+        @keyframes animate{
+            0%{
+                filter: hue-rotate(0deg);
+            }
+            100%{
+                filter: hue-rotate(360deg);
+            }
+        }
+         
+      </style>
+      <script type="text/javascript">
+        $(document).ready(function () {
+            $("#MyValueList").spinner();
+        });
+    </script>
+    </head>
+    <body>
+
+        <div id="example">
+            <input type="text" id="MyValueList" placeholder="Select Number">
+        </div>
+    </body>
+</html>
